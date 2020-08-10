@@ -1,5 +1,10 @@
 #!/usr/bin/env python
-import reader0_function
+import RFID
+reader0 = RFID.Read("0")
+# reader1 = RFID.Read("1")
+# reader2 = RFID.Read("2")
+
 while 1:
-    data0 = reader0_function.return_data()
-    print(data0)
+    reader0.get()
+    # reader1.get()
+    # reader2.get()
