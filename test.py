@@ -7,3 +7,4 @@ class Reader():
 
 
 r= Reader(2)
+r.get()

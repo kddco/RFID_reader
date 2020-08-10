@@ -9,13 +9,13 @@ class Read():
         r0 = [0, 0, 0, 0]
         try:
             while 1:
-                rawdata = ser.readall()
+                rawdata = self.ser.readall()
                 if (len(rawdata) > 3):
                     result_data = rawdata.decode()
                     return (result_data)
 
         except Exception:
-            ser.close()
+            self.ser.close()
             print("USB", id , Exception)
 
 
