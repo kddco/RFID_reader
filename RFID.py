@@ -21,7 +21,9 @@ class Read():
                 self.ser.close()
                 print("USB", id , Exception)
 
-
+if __name__ == '__main__':
+    r= Read("1")
+    r.get()
     
     
 #!/usr/bin/env python
