@@ -14,7 +14,7 @@ class Read():
                 if (len(rawdata) > 3):
                     # result_data[] = rawdata.decode()
                     print("result:",rawdata.decode())
-                    return (result_data)
+                    # return (result_data)
                 else:
                     print("get nothing")
             except Exception:
