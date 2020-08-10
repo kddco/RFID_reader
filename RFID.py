@@ -4,7 +4,7 @@ import serial
 class Read():
     def __init__(self, id):
         self.id=id
-        ser = serial.Serial('/dev/ttyUSB'+str(id), 9600, timeout=1);
+        self.ser = serial.Serial('/dev/ttyUSB'+str(id), 9600, timeout=1);
     def get(self):
         r0 = [0, 0, 0, 0]
         try:
