@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 import RFID
-#引入
 reader0 = RFID.Read("0")
 # reader1 = RFID.Read("1")
 # reader2 = RFID.Read("2")
