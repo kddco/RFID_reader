@@ -5,5 +5,8 @@ class Read():
     def get(self):
         print(self.ser)
 
-r= Read(2)
-r.get()
+
+a=[1212,4124124,124124]
+b=a
+
+print(b)

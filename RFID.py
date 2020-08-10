@@ -8,11 +8,11 @@ class Read():
         print("self.ser",self.ser)
         print("USB",id,"init ok")
     def get(self):
-        r0 = [0, 0, 0, 0]
         try:
             rawdata = self.ser.readall()
-            if (len(rawdata) > 3):
+            if (len(rawdata) > 0):
                 result_data = rawdata.decode()
+                print("result:",result_data)
                 return (result_data)
             else:
                 print("get nothing")
