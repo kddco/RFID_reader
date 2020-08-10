@@ -10,13 +10,12 @@ class Read():
     def get(self):
         r0 = [0, 0, 0, 0]
         try:
-            while 1:
-                rawdata = self.ser.readall()
-                if (len(rawdata) > 3):
-                    result_data = rawdata.decode()
-                    return (result_data)
-                else:
-                    print("get nothing")
+            rawdata = self.ser.readall()
+            if (len(rawdata) > 3):
+                result_data = rawdata.decode()
+                return (result_data)
+            else:
+                print("get nothing")
         except Exception:
             self.ser.close()
             print("USB", id , Exception)
