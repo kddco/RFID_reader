@@ -22,7 +22,7 @@ class Read():
                 print("USB", id , Exception)
 
 if __name__ == '__main__':
-    r= Read("1")
+    r= Read("0")
     r.get()
     
     
