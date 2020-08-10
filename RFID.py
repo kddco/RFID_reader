@@ -12,9 +12,9 @@ class Read():
             try:
                 rawdata = self.ser.readall()
                 if (len(rawdata) > 3):
-                    # result_data[] = rawdata.decode()
-                    print("result:",rawdata.decode())
-                    # return (result_data)
+                    result_data = rawdata.decode()
+                    print(rawdata.decode())
+                    return (result_data)
                 else:
                     print("get nothing")
             except Exception:
