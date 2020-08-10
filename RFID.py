@@ -18,7 +18,7 @@ class Read():
                 else:
                     print("get nothing")
             except Exception:
-                self.ser.close()
+                # self.ser.close()
                 print("USB", id , Exception)
 
 if __name__ == '__main__':
